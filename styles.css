@@ -1,0 +1,56 @@
+@import "reset.css";
+:root {
+  --background-item-color: #8e44ad;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+ul {
+  list-style: none;
+  cursor: pointer;
+}
+.menu_box {
+  margin-top: 100px;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+.menu {
+  padding: 10px 20px;
+  margin-right: 5px;
+}
+.menu:hover {
+  color: blue;
+  text-decoration: underline;
+}
+.menu_item1 {
+  background-color: var(--background-item-color);
+}
+.menu_item2 {
+  background-color: var(--background-item-color);
+}
+.menu_item3 {
+  background-color: var(--background-item-color);
+}
+#content_box {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+.content {
+  position: absolute;
+  background-color: var(--background-item-color);
+  width: 100%;
+  height: 300px;
+  z-index: -1;
+}
+.hidden {
+  z-index: -1;
+}
+.showing {
+  z-index: 0;
+}
